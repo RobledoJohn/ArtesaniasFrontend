@@ -10,7 +10,7 @@ export const ProductoItem = ({ data }) => {//recibo el data con el id del produc
 
 
   function getData() {
-    fetch(`https://api-artesania-backend.up.railway.app/productos/${data}`)//obtengo el producto completo enviando el id
+    fetch(`https://api-artesania.netlify.app//productos/${data}`)//obtengo el producto completo enviando el id
       .then((resp) => resp.json())
       .then((resp) => {
         return setDataProductos(resp)

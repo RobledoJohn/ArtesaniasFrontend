@@ -23,7 +23,7 @@ export const Registro = () => {
 
     const datosJSON = JSON.stringify(usuario)
 
-    fetch("https://api-artesania-backend.up.railway.app/api/usuario", {
+    fetch("https://api-artesania.netlify.app//api/usuario", {
       method: "POST",
       body: datosJSON,
       headers: {

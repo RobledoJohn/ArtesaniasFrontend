@@ -29,7 +29,7 @@ export const ListaProductos = () => {
 
   //se obtiene los productos de la base de datos
   function getData() {
-    fetch("https://api-artesania-backend.up.railway.app/productosStock")
+    fetch("https://api-artesania.netlify.app//productosStock")
       .then((resp) => resp.json())
       .then((resp) => {
         return setProductos(resp),

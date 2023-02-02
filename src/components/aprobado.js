@@ -5,7 +5,7 @@ export const Aprobado = () => {
   const [resumenItems, setResumenItems] = useState([]);
 
   function getResumenCarrito() {
-    fetch("https://api-artesania-backend.up.railway.app/getResumenCarrito")
+    fetch("https://api-artesania.netlify.app//getResumenCarrito")
       .then((resp) => resp.json())
       .then((resp) => {
         return setResumenItems(resp);
@@ -37,12 +37,12 @@ export const Aprobado = () => {
       return response.json(); // parses JSON response into native JavaScript objects
     }
 
-    postData("https://api-artesania-backend.up.railway.app/ventas", { answer: 42 }).then((data) => {
+    postData("https://api-artesania.netlify.app//ventas", { answer: 42 }).then((data) => {
       console.log(data); // JSON data parsed by `data.json()` call
     });
 
     //vaciar carrito
-    fetch("https://api-artesania-backend.up.railway.app/vaciarCarrito")
+    fetch("https://api-artesania.netlify.app//vaciarCarrito")
       .then((resp) => resp.json())
       .then((resp) => {
         return resp;

@@ -30,7 +30,7 @@ export const Formulariologin = () => {
       };
       setLoading(true);
       await axios
-        .post("https://api-artesania-backend.up.railway.app/login", Usuario)
+        .post("https://api-artesania.netlify.app//login", Usuario)
         .then((res) => {
           const { data } = res;
           setMensaje(data.mensaje);

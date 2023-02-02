@@ -2,7 +2,7 @@ import "../styles/registro.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-// https://api-artesania-backend.up.railway.app/api/usuario
+// https://api-artesania.netlify.app//api/usuario
 
 export const Registro = () => {
   const [inputs, setInputs] = useState({
@@ -43,7 +43,7 @@ export const Registro = () => {
       setLoading(true);
       await axios
         .post(
-          "https://api-artesania-backend.up.railway.app/register",
+          "https://api-artesania.netlify.app//register",
           Usuario
         )
         .then((res) => {

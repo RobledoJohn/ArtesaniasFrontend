@@ -10,7 +10,7 @@ export const Ventas = () => {
   }, []);
 
   function getVentas() {
-    fetch("https://api-artesania-backend.up.railway.app/ventas")
+    fetch("https://api-artesania.netlify.app//ventas")
       .then((res) => res.json())
       .then((res) => {
         console.log(res)

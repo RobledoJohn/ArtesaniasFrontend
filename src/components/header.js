@@ -15,7 +15,7 @@ export const Header = () => {
       }, []);
 
     function getProductosCarrito() {
-      fetch("https://api-artesania-backend.up.railway.app/getProductosCarrito")
+      fetch("https://api-artesania.netlify.app//getProductosCarrito")
         .then((resp) => resp.json())
         .then((resp) => {
           return setCarritoItems(resp)

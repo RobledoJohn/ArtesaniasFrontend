@@ -31,7 +31,7 @@ export const ProductosAdmin = () => {
 
 
   function getData() {
-    fetch("https://api-artesania-backend.up.railway.app/productos")
+    fetch("https://api-artesania.netlify.app//productos")
       .then((resp) => resp.json())
       .then((resp) => {
         return setDataProductos(resp),

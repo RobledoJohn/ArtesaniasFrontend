@@ -14,7 +14,7 @@ export const VistaProducto = () => {
     }, [])
 
     function getData() {
-        fetch(`https://api-artesania-backend.up.railway.app/productos/${params._id}`)
+        fetch(`https://api-artesania.netlify.app//productos/${params._id}`)
             .then((resp) => resp.json())
             .then((resp) => {
                 return setProducto(resp)
@@ -24,7 +24,7 @@ export const VistaProducto = () => {
 
     const addProductosCarrito = async (prod) => {
         const { nombre, imagen, precio } = prod;
-        await axios.post("https://api-artesania-backend.up.railway.app/postProductosCarrito", { nombre, imagen, precio });
+        await axios.post("https://api-artesania.netlify.app//postProductosCarrito", { nombre, imagen, precio });
     };
 
     return (

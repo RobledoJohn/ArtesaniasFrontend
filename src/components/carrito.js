@@ -8,7 +8,7 @@ export const CarritoCompras = () => {
   const [carritoItems, setCarritoItems] = useState([]);
 
   function getProductosCarrito() {
-    fetch("https://api-artesania-backend.up.railway.app/getProductosCarrito")
+    fetch("https://api-artesania.netlify.app//getProductosCarrito")
       .then((resp) => resp.json())
       .then((resp) => {
         return setCarritoItems(resp)
@@ -20,11 +20,11 @@ export const CarritoCompras = () => {
   const editarItemCarrito = async (id, query, cantidad) => {
     if (query === "del" && cantidad === 1) {
       await axios
-        .delete(`https://api-artesania-backend.up.railway.app/delProductosCarrito/${id}`)
+        .delete(`https://api-artesania.netlify.app//delProductosCarrito/${id}`)
         .then(({ data }) => console.log(data));
     } else {
       await axios
-        .put(`https://api-artesania-backend.up.railway.app/putProductosCarrito/${id}?query=${query}`, {
+        .put(`https://api-artesania.netlify.app//putProductosCarrito/${id}?query=${query}`, {
           cantidad,
         })
         .then(({ data }) => console.log(data));
@@ -36,7 +36,7 @@ export const CarritoCompras = () => {
 
   const resumenCarrito = async (query) => {
     await axios
-      .get(`https://api-artesania-backend.up.railway.app/putResumenCarrito?query=${query}`)
+      .get(`https://api-artesania.netlify.app//putResumenCarrito?query=${query}`)
       .then(({ data }) => console.log(data));
     getResumenCarrito();
   };
@@ -44,7 +44,7 @@ export const CarritoCompras = () => {
   const [resumenItems, setResumenItems] = useState([]);
 
   function getResumenCarrito() {
-    fetch("https://api-artesania-backend.up.railway.app/getResumenCarrito")
+    fetch("https://api-artesania.netlify.app//getResumenCarrito")
       .then((resp) => resp.json())
       .then((resp) => {
         return setResumenItems(resp)
