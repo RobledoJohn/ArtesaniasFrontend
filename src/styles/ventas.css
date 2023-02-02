@@ -1,0 +1,60 @@
+.contenedor-ventas{
+  
+  margin-top: 50px;
+}
+.thead-ventas{
+  text-align: center;
+  background-color: #00A89E;
+  color: white;
+  height: 50px;
+  font-size: medium;
+}
+.tabla-ventas th{
+
+  width: 10em;
+  font-size: 18px;
+}
+
+.tabla-ventas{
+  border-collapse: collapse;
+}
+.th-col-100{
+  width: 100px;
+}
+.th-col-130{
+  width: 130px;
+}
+.tabla-ventas tr:nth-of-type(1)>th {
+  color: #fff;
+  background-color:#00A89E;
+}
+
+.tabla-ventas td {
+  text-align: right;
+  font-weight: bold;    
+}
+
+h1 {
+  color:#00A89E;
+}
+
+.img-ventas {
+  max-block-size: 80px;  
+  margin: 5px;
+  display: block;
+}
+.thead.ventas{
+  justify-content: center;
+  align-items: center;
+}
+.tbody-ventas{
+  background-color:  white;
+}
+
+.item-bd-ventas-tittle{
+  padding-right: 2%;
+}
+
+.item-bd-ventas{
+  padding: 0 15px;
+}

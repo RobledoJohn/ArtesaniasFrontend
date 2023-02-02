@@ -1,0 +1,58 @@
+{
+    "Usuarios": [
+      {
+        "rol": "admin",
+        "nombre": "Administrador",
+        "email": "admin@artesanias.com",
+        "identificacion": "1000",
+        "password": "TiendaVirtual",
+        "telefono": "601000000",
+        "direccion": "calle falsa casa0"
+      },
+      {
+        "rol": "cliente",
+        "nombre": "John Robledo",
+        "email": "john@correo.com",
+        "identificacion": "1001",
+        "password": "JohnRobledo",
+        "telefono": "601000001",
+        "direccion": "calle falsa casa1"
+      },
+      {
+        "rol": "cliente",
+        "nombre": "Victoria Montaño",
+        "email": "vikomomu@correo.com",
+        "identificacion": "1002",
+        "password": "vikomomu",
+        "telefono": "601000002",
+        "direccion": "calle falsa casa2"
+      },
+      {
+        "rol": "cliente",
+        "nombre": "Diego Quiñones",
+        "email": "DiegoArmando@correo.com",
+        "identificacion": "1003",
+        "password": "DiegoArmando",
+        "telefono": "601000003",
+        "direccion": "calle falsa casa3"
+      },
+      {
+        "rol": "cliente",
+        "nombre": "Deivi Ruales",
+        "email": "DeividRuales@correo.com",
+        "identificacion": "1004",
+        "password": "DeividRuales",
+        "telefono": "601000004",
+        "direccion": "calle falsa casa4"
+      },
+      {
+        "rol": "cliente",
+        "nombre": "Fernando Enriquez",
+        "email": "FernandoEnriquez@correo.com",
+        "identificacion": "1005",
+        "password": "FernandoEnriquez",
+        "telefono": "601000005",
+        "direccion": "calle falsa casa5"
+      }
+    ]
+  }

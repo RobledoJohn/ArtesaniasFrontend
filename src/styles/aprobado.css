@@ -1,0 +1,30 @@
+.contenedor-aprobacion{
+    margin-top: 5%;
+}
+.aprobado{
+    color: white;
+    background-color: #00a89e;
+    border-radius: 20px;
+    width: 300px;
+}
+.contenedor-resumen-aprobacion {
+    margin-top: 40px;
+    width: 260px;
+    height: 280px;
+    background-color: white;
+    border-radius: 3%;
+    padding: 10px 10px;
+    padding-bottom: 30px;
+}
+.div-boton-finzalizar{
+    text-align: center;
+    margin: 20px;
+    background-color: #00a89e;
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+}
+.boton-finalizar{
+    color: white;
+    text-decoration: none;
+}

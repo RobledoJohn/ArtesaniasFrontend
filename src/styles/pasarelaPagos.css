@@ -1,0 +1,131 @@
+.contenedor-general {
+    display: flex;
+    justify-content: center;
+    margin: 150px 10px;
+    overflow: auto;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contenedor-interno {
+    width: 400px;
+    background-color: white;
+    border-radius: 3%;
+    padding: 10px 30px;
+    padding-bottom: 30px;
+}
+
+.div-total-pagar {
+    margin-right: 10px;
+}
+
+.div-titulo {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.metodo-pago-icono {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono-pago {
+    width: 35px;
+    height: 40px;
+}
+
+.div-metodo-pago {
+    border-top: 0;
+    border-bottom: 2px solid #00a89e;
+}    
+
+.radio-contraentrega {
+    margin-top: 0;
+    margin-bottom: 93px;
+}
+
+.titulo-datos-envio {
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulario-envio {
+    display: flex;
+    justify-content: left;
+}
+
+.etiqueta-datos-envio {
+    font-weight: bold;
+}
+
+.div-datos-envio {
+    border-top: 0;
+    border-bottom: 2px solid #00a89e;
+}
+
+.div-datos-envio p {
+    margin: 0px 5px;   
+}
+
+.input-dir-opcional {
+    margin: 10px 0 2px 5px;
+    margin-top: 0;
+}
+
+.div-dir-opcional {
+    padding-bottom: 20px;
+}
+
+.div-dir-opcional p {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.div-boton {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+.boton-continuar  {    
+    width: 100px;
+    height: 20px;
+    border-radius: 10%;
+    background-color: #00a89e;
+}
+
+.boton-continuar:hover  {
+    width: 100px;
+    height: 20px;
+    border-radius: 10%;
+    background-color: #05c4b7;
+}
+
+.boton-continuar:active {
+    width: 100px;
+    height: 20px;
+    border-radius: 10%;
+    border-color: #00a89e;
+    background-color: #028179;
+}
+
+.boton-continuar a {
+    text-decoration: none;
+}
+
+.texto-continuar {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.texto-continuar:hover {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+}

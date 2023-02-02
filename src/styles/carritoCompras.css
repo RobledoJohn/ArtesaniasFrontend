@@ -1,0 +1,160 @@
+.container-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Contenedor-tabla {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    height: 210px;
+    padding: 2%;
+    justify-items: center;
+    margin-bottom: 5px;
+
+}
+
+.table-carrito {
+    
+    width: 500px;
+    height: 100px;
+    border: 1px solid #02080a;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.imagen {
+    width: 60px;
+}
+
+.iconos {
+    width: 20px;
+    padding-top: 5px;
+       
+}
+
+td,
+tr {
+    border: 1px solid #9ba3a6;
+    padding: 1px;
+    text-align: center;
+}
+
+.precio {
+    height: 30px;
+}
+
+.cantidad {
+    margin-right: 6px;
+    background-color: rgb(255, 255, 255);
+    border-color: #00a89e;
+    border-radius: 10px;
+    
+}
+
+.opciones-prod {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenedor-resumen {
+    width: 260px;
+    height: 280px;
+    background-color: white;
+    border-radius: 3%;
+    padding: 10px 10px;
+    padding-bottom: 30px;
+    margin-top: 6%;
+}
+
+.div-boton {
+
+    display: flex;
+    justify-content: left;
+    
+}
+
+.div-boton2 {
+
+    display: flex;
+    justify-content: right;
+    
+}
+.boton-pagar-ahora {
+
+    width: 100px;
+    height: 20px;
+    border-radius: 5%;
+    background-color: #00a89e;
+}
+.texto-pagar-ahora{
+
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 0;
+
+
+}
+
+.boton-seguir-comprando {
+    width: 150px;
+    height: 20px;
+    border-radius: 5%;
+    background-color: #ebebeb;
+}
+
+.texto-seguir-comprando {
+
+    color: black;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 0;
+
+}
+.div-titulo {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-Total, 
+.txt-cantidad, .text-valor {
+
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.text-total-big, .text-valor-big {
+    font-size: 18px;
+}
+
+.titulo-resumen-compra {
+    font-size: 20px;
+}
+
+.div-envio {
+
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.div-total-pagar {
+
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+}

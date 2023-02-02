@@ -1,0 +1,68 @@
+body {
+    margin: 100px 0;
+}
+
+.header {
+    background-color: #76c3bc;
+    overflow: hidden;
+    block-size: 80px;
+    top: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    margin: 5px 10px;
+    width:120px;
+}
+
+.divFondoIconos {
+    background-color: #00a89e;
+    margin: 15px 5px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 10px;
+}
+
+ .divFondoIconos:hover{  
+    margin: 15px 5px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 10px;
+    background-color: #05c7ba;  
+}
+
+.divFondoIconos:active{  
+    margin: 15px 5px;
+    border-radius: 50%;
+    float: right;
+    margin-right: 10px;
+    background-color: #07e9da;  
+}
+
+#fondoUsuario {
+    margin-right: 5px;
+}
+
+.iconosHeader {
+    float: right;
+    margin: 10px;
+    width: 30px;
+}
+
+.cant-prod-logo-carrito{
+    background-color: #15645f;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    text-align: center;
+    padding: 1px;
+    margin-top: 30px;
+}
+
+
+
+

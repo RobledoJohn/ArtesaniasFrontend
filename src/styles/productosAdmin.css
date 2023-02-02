@@ -1,0 +1,120 @@
+body {
+    background-color: #ebebeb;
+    height: 100%;
+}
+
+.titulo-prod-admin  {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 10%;
+    border-color: #00a89e;
+    background-color: white;
+}
+
+.textoListProductos {
+    color: #00a89e;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    vertical-align: middle;
+    justify-content: center;
+    margin: 2px 5px;
+}
+
+.botonAgregar  {
+    margin-top: 10px;
+    width: 300px;
+    height: 25px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    border-radius: 10%;
+    border-color: #00a89e;
+    background-color: white;
+}
+
+.botonAgregar:hover  {
+    width: 300px;
+    height: 25px;
+    border: 2px solid;
+    border-radius: 10%;
+    border-color: #00a89e;
+    background-color: #00a89e;
+}
+
+.botonAgregar:active {
+    margin-bottom: 10px;
+    width: 300px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 10%;
+    border-color: #00a89e;
+    background-color: #02c7ba;
+}
+
+.botonAgregar a {
+    text-decoration: none;
+}
+
+.textoAgregar {
+    color: #00a89e;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: middle;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.textoAgregar:hover {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    vertical-align: middle;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.contenedorTabla {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    height: 600px;
+    margin: 0 5%;
+}
+
+.tabla-admin-prod {
+    width: auto;
+    border: 1px solid #9ba3a6;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.colRef {
+    width: 10%;
+}
+
+.colIcono {
+    width: 70px;
+}
+
+.encabezados {
+    background-color: #00a89e;   
+    color: white; 
+    font-size: medium;
+}
+.imagenProducto {
+    width: 120px;
+}
+
+.iconos {
+    width: 30px;
+}

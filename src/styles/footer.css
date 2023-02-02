@@ -1,0 +1,29 @@
+.divFooter {
+    background-color: #9ba3a6;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    block-size: 70px;
+}
+
+.texto {
+
+    text-align: center;
+    padding-top: 15px;
+    margin: 0px;
+    color: white;
+}
+
+.enlace {
+    text-decoration: none;
+    color: black
+}
+
+.botonWhatsapp {
+    position: absolute;
+    overflow: visible;
+    top: 1px;
+    right: 5px;
+    width: 130px;
+}
