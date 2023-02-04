@@ -15,7 +15,7 @@ export const EliminarProducto = () => {
 
 
   function getData() {
-    fetch(`https://api-artesania.netlify.app//productos/${params._id}`)
+    fetch(`https://artesanias-backend.onrender.com//productos/${params._id}`)
       .then((resp) => resp.json())
       .then((resp) => {
         return setDataProductos(resp)
@@ -26,7 +26,7 @@ export const EliminarProducto = () => {
   function eliminarProducto() {
 
     const datosJSON = JSON.stringify(dataProductos)
-    fetch(`https://api-artesania.netlify.app//eliminarProducto/${params._id}`, {
+    fetch(`https://artesanias-backend.onrender.com//eliminarProducto/${params._id}`, {
       method: "PUT",
       body: datosJSON,
       headers: {

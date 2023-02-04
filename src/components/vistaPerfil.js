@@ -19,7 +19,7 @@ export const Perfil = () => {
 
   function getUsuario() {
     //Se debe reemplazar "idRecibido" por params._id
-    fetch(`https://api-artesania.netlify.app//user/${idRecibido}`)
+    fetch(`https://artesanias-backend.onrender.com//user/${idRecibido}`)
       .then((resp) => resp.json())
       .then((resp) => {
         return setUsuario(resp)

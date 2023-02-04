@@ -15,7 +15,7 @@ export const Header = () => {
       }, []);
 
     function getProductosCarrito() {
-      fetch("https://api-artesania.netlify.app//getProductosCarrito")
+      fetch("https://artesanias-backend.onrender.com//getProductosCarrito")
         .then((resp) => resp.json())
         .then((resp) => {
           return setCarritoItems(resp)
