@@ -14,7 +14,7 @@ export const VistaProducto = () => {
     }, [])
 
     function getData() {
-        fetch(`https://artesanias-backend.onrender.com//productos/${params._id}`)
+        fetch(`https://artesanias-backend.onrender.com/productos/${params._id}`)
             .then((resp) => resp.json())
             .then((resp) => {
                 return setProducto(resp)
@@ -24,7 +24,7 @@ export const VistaProducto = () => {
 
     const addProductosCarrito = async (prod) => {
         const { nombre, imagen, precio } = prod;
-        await axios.post("https://artesanias-backend.onrender.com//postProductosCarrito", { nombre, imagen, precio });
+        await axios.post("https://artesanias-backend.onrender.com/postProductosCarrito", { nombre, imagen, precio });
     };
 
     return (

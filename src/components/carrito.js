@@ -8,7 +8,7 @@ export const CarritoCompras = () => {
   const [carritoItems, setCarritoItems] = useState([]);
 
   function getProductosCarrito() {
-    fetch("https://artesanias-backend.onrender.com//getProductosCarrito")
+    fetch("https://artesanias-backend.onrender.com/getProductosCarrito")
       .then((resp) => resp.json())
       .then((resp) => {
         return setCarritoItems(resp)
@@ -20,11 +20,11 @@ export const CarritoCompras = () => {
   const editarItemCarrito = async (id, query, cantidad) => {
     if (query === "del" && cantidad === 1) {
       await axios
-        .delete(`https://artesanias-backend.onrender.com//delProductosCarrito/${id}`)
+        .delete(`https://artesanias-backend.onrender.com/delProductosCarrito/${id}`)
         .then(({ data }) => console.log(data));
     } else {
       await axios
-        .put(`https://artesanias-backend.onrender.com//putProductosCarrito/${id}?query=${query}`, {
+        .put(`https://artesanias-backend.onrender.com/putProductosCarrito/${id}?query=${query}`, {
           cantidad,
         })
         .then(({ data }) => console.log(data));
@@ -36,7 +36,7 @@ export const CarritoCompras = () => {
 
   const resumenCarrito = async (query) => {
     await axios
-      .get(`https://artesanias-backend.onrender.com//putResumenCarrito?query=${query}`)
+      .get(`https://artesanias-backend.onrender.com/putResumenCarrito?query=${query}`)
       .then(({ data }) => console.log(data));
     getResumenCarrito();
   };
@@ -44,7 +44,7 @@ export const CarritoCompras = () => {
   const [resumenItems, setResumenItems] = useState([]);
 
   function getResumenCarrito() {
-    fetch("https://artesanias-backend.onrender.com//getResumenCarrito")
+    fetch("https://artesanias-backend.onrender.com/getResumenCarrito")
       .then((resp) => resp.json())
       .then((resp) => {
         return setResumenItems(resp)

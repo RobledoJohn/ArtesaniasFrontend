@@ -24,7 +24,7 @@ export const AgregarProducto = () => {
         
     const datosJSON = JSON.stringify(producto)       
     
-    fetch("https://artesanias-backend.onrender.com/", {
+    fetch("https://artesanias-backend.onrender.com", {
         method: "POST",
         body: datosJSON,
         headers: {

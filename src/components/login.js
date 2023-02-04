@@ -30,7 +30,7 @@ export const Formulariologin = () => {
       };
       setLoading(true);
       await axios
-        .post("https://artesanias-backend.onrender.com//login", Usuario)
+        .post("https://artesanias-backend.onrender.com/login", Usuario)
         .then((res) => {
           const { data } = res;
           setMensaje(data.mensaje);

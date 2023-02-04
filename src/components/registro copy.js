@@ -23,7 +23,7 @@ export const Registro = () => {
 
     const datosJSON = JSON.stringify(usuario)
 
-    fetch("https://artesanias-backend.onrender.com//api/usuario", {
+    fetch("https://artesanias-backend.onrender.com/api/usuario", {
       method: "POST",
       body: datosJSON,
       headers: {

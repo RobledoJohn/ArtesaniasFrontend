@@ -15,7 +15,7 @@ export const ModificarProducto = () => {
 
 
   function getData() {
-    fetch(`https://artesanias-backend.onrender.com//productos/${params._id}`)//obtengo los datos del producto enviando el id al backend
+    fetch(`https://artesanias-backend.onrender.com/productos/${params._id}`)//obtengo los datos del producto enviando el id al backend
       .then((resp) => resp.json())
       .then((resp) => {
         return setDataProductos(resp)
@@ -25,7 +25,7 @@ export const ModificarProducto = () => {
 
   function modificarProducto() {
     const datosJSON = JSON.stringify(dataProductos)//se convierte el producto con los atributos seteados a json
-    fetch(`https://artesanias-backend.onrender.com//modificarProducto/${params._id}`, {//envio el id del producto a modificar al backend
+    fetch(`https://artesanias-backend.onrender.com/modificarProducto/${params._id}`, {//envio el id del producto a modificar al backend
       method: "PUT",
       body: datosJSON,
       headers: {

@@ -31,7 +31,7 @@ export const ProductosAdmin = () => {
 
 
   function getData() {
-    fetch("https://artesanias-backend.onrender.com//productos")
+    fetch("https://artesanias-backend.onrender.com/productos")
       .then((resp) => resp.json())
       .then((resp) => {
         return setDataProductos(resp),

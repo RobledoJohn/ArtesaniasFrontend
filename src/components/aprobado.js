@@ -5,7 +5,7 @@ export const Aprobado = () => {
   const [resumenItems, setResumenItems] = useState([]);
 
   function getResumenCarrito() {
-    fetch("https://artesanias-backend.onrender.com//getResumenCarrito")
+    fetch("https://artesanias-backend.onrender.com/getResumenCarrito")
       .then((resp) => resp.json())
       .then((resp) => {
         return setResumenItems(resp);
@@ -37,12 +37,12 @@ export const Aprobado = () => {
       return response.json(); // parses JSON response into native JavaScript objects
     }
 
-    postData("https://artesanias-backend.onrender.com//ventas", { answer: 42 }).then((data) => {
+    postData("https://artesanias-backend.onrender.com/ventas", { answer: 42 }).then((data) => {
       console.log(data); // JSON data parsed by `data.json()` call
     });
 
     //vaciar carrito
-    fetch("https://artesanias-backend.onrender.com//vaciarCarrito")
+    fetch("https://artesanias-backend.onrender.com/vaciarCarrito")
       .then((resp) => resp.json())
       .then((resp) => {
         return resp;

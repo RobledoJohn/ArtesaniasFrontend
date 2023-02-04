@@ -29,7 +29,7 @@ export const ListaProductos = () => {
 
   //se obtiene los productos de la base de datos
   function getData() {
-    fetch("https://artesanias-backend.onrender.com//productosStock")
+    fetch("https://artesanias-backend.onrender.com/productosStock")
       .then((resp) => resp.json())
       .then((resp) => {
         return setProductos(resp),

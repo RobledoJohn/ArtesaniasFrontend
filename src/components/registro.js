@@ -2,7 +2,7 @@ import "../styles/registro.css";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-// https://artesanias-backend.onrender.com//api/usuario
+// https://artesanias-backend.onrender.com/api/usuario
 
 export const Registro = () => {
   const [inputs, setInputs] = useState({
@@ -43,7 +43,7 @@ export const Registro = () => {
       setLoading(true);
       await axios
         .post(
-          "https://artesanias-backend.onrender.com//register",
+          "https://artesanias-backend.onrender.com/register",
           Usuario
         )
         .then((res) => {

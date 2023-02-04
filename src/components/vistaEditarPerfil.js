@@ -20,7 +20,7 @@ export const EditarPerfil = () => {
   }, [])
 
   function getUsuario() {
-    fetch(`https://artesanias-backend.onrender.com//user/${params._id}`)
+    fetch(`https://artesanias-backend.onrender.com/user/${params._id}`)
       .then((resp) => resp.json())
       .then((resp) => {
         return setUsuario(resp)
@@ -37,7 +37,7 @@ export const EditarPerfil = () => {
 
   function editarUsuario() {
     const datosJSON = JSON.stringify(usuario)
-    fetch(`https://artesanias-backend.onrender.com//editUser/${params._id}`, {
+    fetch(`https://artesanias-backend.onrender.com/editUser/${params._id}`, {
       method: "PUT",
       body: datosJSON,
       headers: {

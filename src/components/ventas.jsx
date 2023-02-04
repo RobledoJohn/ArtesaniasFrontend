@@ -10,7 +10,7 @@ export const Ventas = () => {
   }, []);
 
   function getVentas() {
-    fetch("https://artesanias-backend.onrender.com//ventas")
+    fetch("https://artesanias-backend.onrender.com/ventas")
       .then((res) => res.json())
       .then((res) => {
         console.log(res)
