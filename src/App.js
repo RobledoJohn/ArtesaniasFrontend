@@ -48,7 +48,7 @@ function App() {
           <Route path="/" element={<Formulariologin />} />
           <Route path="/Registrarse" element={<Registro />} />
           <Route
-            path="/Perfil"
+            path="/Perfil/:_id"
             element={
               <>
                 <Header />
